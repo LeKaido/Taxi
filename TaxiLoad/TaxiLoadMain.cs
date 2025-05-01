@@ -233,16 +233,17 @@ namespace TaxiSplit
 				PickupCentroidLocation = v.PickupCentroidLocation,
 				DropOffCentroidLatitude = v.DropOffCentroidLatitude, 
 				DropOffCentroidLongitude = v.DropOffCentroidLongitude, 
-				DropOffCentroidLocation = v.DropOffCentroidLocation
+				DropOffCentroidLocation = v.DropOffCentroidLocation,
+				rec_updated = current_timestamp			
 		WHEN NOT matched THEN
 			INSERT (TripId, TaxiId, TripStart, TripEnd, TripSeconds, TripMiles, PickupCensus, DropOffCensus,
 			PickupComArea, DropOffComArea, Fare, Tips, Tolls, ExtraCharges, TripTotal, PaymentType,
 			TaxiCompany, PickupCentroidLatitude, PickupCentroidLongitude, PickupCentroidLocation,
-			DropOffCentroidLatitude, DropOffCentroidLongitude, DropOffCentroidLocation)
+			DropOffCentroidLatitude, DropOffCentroidLongitude, DropOffCentroidLocation, rec_updated)
 			VALUES (v.TripId, v.TaxiId, v.TripStart, v.TripEnd, v.TripSeconds, v.TripMiles, v.PickupCensus, v.DropOffCensus,
 			v.PickupComArea, v.DropOffComArea, v.Fare, v.Tips, v.Tolls, v.ExtraCharges, v.TripTotal, v.PaymentType,
 			v.TaxiCompany, v.PickupCentroidLatitude, v.PickupCentroidLongitude, v.PickupCentroidLocation,
-			v.DropOffCentroidLatitude, v.DropOffCentroidLongitude, v.DropOffCentroidLocation)";
+			v.DropOffCentroidLatitude, v.DropOffCentroidLongitude, v.DropOffCentroidLocation, current_timestamp)";
 
 		}
 	}

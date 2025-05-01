@@ -24,6 +24,7 @@ CREATE TABLE Taxi.TaxiRides (
     DropOffCentroidLatitude VARCHAR(255),
     DropOffCentroidLongitude VARCHAR(255),
     DropOffCentroidLocation VARCHAR(255),
+    RecUpdateTimestamp TIMESTAMP,
     PRIMARY KEY (TripId, TripStart)
 ) PARTITION BY RANGE (TripStart)
 ;
