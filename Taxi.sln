@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiLoad", "TaxiLoad\TaxiLoad.csproj", "{CEACB1BD-0C04-4F11-8B86-D96C635489B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiSplit", "TaxiSplit\TaxiSplit.csproj", "{08693364-4CE6-4FF7-92D9-42875744CDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCommon", "TaxiCommon\TaxiCommon.csproj", "{DD259AEC-4047-4D22-9DBD-62818E78C852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEACB1BD-0C04-4F11-8B86-D96C635489B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEACB1BD-0C04-4F11-8B86-D96C635489B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEACB1BD-0C04-4F11-8B86-D96C635489B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEACB1BD-0C04-4F11-8B86-D96C635489B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08693364-4CE6-4FF7-92D9-42875744CDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08693364-4CE6-4FF7-92D9-42875744CDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08693364-4CE6-4FF7-92D9-42875744CDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08693364-4CE6-4FF7-92D9-42875744CDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD259AEC-4047-4D22-9DBD-62818E78C852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD259AEC-4047-4D22-9DBD-62818E78C852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD259AEC-4047-4D22-9DBD-62818E78C852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD259AEC-4047-4D22-9DBD-62818E78C852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B802808-8C8C-4D37-9F53-618934AE3D57}
+	EndGlobalSection
+EndGlobal
